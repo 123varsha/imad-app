@@ -4,6 +4,61 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var content={
+    title:'article one|varsha ',
+    heading:'article one',
+    date:'sept 5 2017',
+    content: '<p>
+                    this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
+                </p>
+                <p>
+                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
+                </p>
+                 <p>
+                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
+                </p>'
+                
+};
+function createtemplate(data)
+{
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.content;
+    var htmltemplate=
+    <html>
+    <head>
+        <title>
+            S{title}
+        </title>
+        <meta name="viewport"content="width=device-width,initial-scale=1 " />
+        <link href="/ui/style.css" rel="stylesheet" />
+        
+        </head>
+    <body>
+        <div class="container">
+        <div>
+            <a href='/'>home</a>
+            </div>
+            <hr/>
+            <h1>
+                S{heading}
+            </h1>
+            <div>
+            S{date}
+            </div>
+            <div>
+                S{content}
+                
+            </div>
+            
+            </div>
+    </body>
+    </html>
+    ';
+    return htmltemplte;
+    
+}
 
 
 app.get('/', function (req, res) {
