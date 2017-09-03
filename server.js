@@ -40,7 +40,7 @@ title:'article three|varsha ',
            </p>`
    
 
-};
+}};
 
 function createtemplate(data)
 {
