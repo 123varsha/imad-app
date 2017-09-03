@@ -41,6 +41,7 @@ title:'article three|varsha ',
    
 
 };
+
 function createtemplate(data)
 {
     var title=data.title;
