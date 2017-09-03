@@ -4,11 +4,12 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var content={
+var articleOne={
     title:'article one|varsha ',
     heading:'article one',
     date:'sept 5 2017',
-    content:'<p>
+    content:`   
+    <p>
                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
             </p>
                <p> 
@@ -16,7 +17,7 @@ var content={
                 </p>
                  <p>
                      this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
-                </p>'
+                </p>`
 };    
 
 function createtemplate(data)
@@ -25,9 +26,10 @@ function createtemplate(data)
     var heading=data.heading;
     var date=data.date;
     var content=data.content;
+    
     var htmltemplate=
     <html>
-    <head>
+     <head>
         <title>
             S{title}
         </title>
@@ -65,7 +67,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+   res.send(createtemplate(articleOne));
 });
 app.get('/article-two', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
@@ -89,6 +91,7 @@ app.get('/ui/madi.png', function (req, res) {
 // Use 8080 only for local development if you already have apache running on 80
 
 var port = 80;
-app.listen(port, function () {
+app.listen(80, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+<
