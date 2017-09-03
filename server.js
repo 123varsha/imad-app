@@ -27,7 +27,7 @@ articleTwo={
     content:`   
     <p>
                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
-            </p>
+            </p>`
                
 },
 articleThree={
