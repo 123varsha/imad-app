@@ -8,16 +8,16 @@ var content={
     title:'article one|varsha ',
     heading:'article one',
     date:'sept 5 2017',
-    content:{ <p>
+    content:{' <p>
                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
-                </p>
-                <p>
-                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
-                </p>
-                 <p>
-                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
-                </p>
+            
                 
+                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
+                
+                 
+                     this is the content for my first article.this is the content for my first article..this is the content for my first article.this is the content for my first article
+                </p>'
+    };         
 
 function createtemplate(data)
 {
