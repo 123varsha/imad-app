@@ -9,10 +9,9 @@ button.onclick=function(){
              var span=document.getElementById("count");
     span.innerHTML=counter.toString();
         }
-    }
+    };
     //not done yet
    
    };
    request.open('GET','http://varshanayak45.imad.hasura-app.io/counter',true);
    request.send(null);
-};
