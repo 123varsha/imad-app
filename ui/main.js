@@ -12,6 +12,7 @@ button.onclick=function(){
     };
     //not done yet
    
-   };
+   
    request.open('GET','http://varshanayak45.imad.hasura-app.io/counter',true);
    request.send(null);
+};
