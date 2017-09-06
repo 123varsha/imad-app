@@ -16,3 +16,11 @@ button.onclick=function(){
    request.open('GET','http://varshanayak45.imad.hasura-app.io/counter',true);
    request.send(null);
 };
+//submit a name
+var nameInput=document.getElementById('name');
+var name=nameInput.value;
+var submit=document.getElementById('submit_btn');
+submit.onclick =function(){
+    
+    
+};
